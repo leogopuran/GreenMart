@@ -1,0 +1,69 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Green Mart - Farmer LogIn</title>
+
+        <link rel="stylesheet" type="text/css" href="/css/customerLogin.css" />
+        <link rel="stylesheet" type="text/css" href="/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.min.css">
+
+        <script src="/jquery/jquery.min.js"></script>
+        <script src="/popper/popper.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <nav class="navBarContents navbar sticky-top navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="/">GreenMart</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBarContents">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navBarContents collapse navbar-collapse justify-content-end" id="toggleNavBarContents">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <span class="font-weight-bold align-middle mx-auto">Customer Login</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid col-6 offset-3 no-gutters">
+            <div class="card">
+                <div class="card-header text-center font-weight-bold">
+                    LogIn to Buy Products
+                </div>
+                <div class="card-body text-success">
+                    <form id="addNewProductForm" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="customerPhone">Phone No</label>
+                            <input type="text" class="form-control" id="customerPhone" placeholder="Enter Primary Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPassword">Password</label>
+                            <input type="password" class="form-control" id="customerPassword" placeholder="Enter Password">
+                        </div>
+                    </form>
+                    <div class="alert alert-info" role="alert">
+                        Not a member yet? Please SignUp to join and buy products!
+                    </div>
+                </div>
+                <div class="card-footer text-center font-weight-bold">
+                    <button id="customerLoginButton" class="btn btn-outline-success">LogIn</button>
+                    <a href="/customerSignUp" type="button" class="btn btn-outline-info">Sign Up</a>
+                </div>
+            </div>
+            <div id="map" class="map"></div>
+        </div>
+
+        <footer>
+            <div class="pageFooter col-12 bg-light"><i class="far fa-copyright"></i> Copyrights Reserved</div>
+        </footer>
+    </body>
+    <script src="/js/customerLogin.js"></script>
+    </html>

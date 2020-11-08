@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+#Git Files
+.git
+
+#DynamoDB Local Setup
+ddb/
+*.sqlite3
+
+#intelliJ Files
+.idea/
+.mvn/

@@ -1,0 +1,89 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Green Mart - Farmer SignUp</title>
+
+        <link rel="stylesheet" type="text/css" href="/css/addCustomer.css" />
+        <link rel="stylesheet" type="text/css" href="/css/common/common.css" />
+        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.min.css">
+
+        <script src="/jquery/jquery.min.js"></script>
+        <script src="/popper/popper.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <nav class="navBarContents navbar sticky-top navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="/">GreenMart</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavBarContents">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navBarContents collapse navbar-collapse justify-content-end" id="toggleNavBarContents">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <span class="font-weight-bold align-middle mx-auto">Customer SignUp</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid col-6 offset-3 no-gutters">
+            <div class="card">
+                <div class="card-header text-center font-weight-bold">
+                    Add Details to SingUp
+                </div>
+                <div class="card-body text-success">
+                    <form id="addNewProductForm" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Enter Customer Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerAge">Customer Age</label>
+                            <input type="number" class="form-control" id="customerAge" placeholder="Enter Customer Age">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerAddress">Customer Address</label>
+                            <input type="text" class="form-control" id="customerAddress" placeholder="Enter Customer Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerTelephone1">Telephone Primary</label>
+                            <input type="number" class="form-control" id="customerTelephone1" placeholder="Enter Primary Telephone">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerTelephone2">Telephone 2 (optional)</label>
+                            <input type="number" class="form-control" id="customerTelephone2" placeholder="Enter Secondary Telephone">
+                        </div>
+                        <div class="form-group">
+                            <label for="customerPassword">Password</label>
+                            <input type="password" class="form-control" id="customerPassword" placeholder="Enter a Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="desiredLocation">Customer Location</label>
+                            <input type="text" class="form-control" id="desiredLocation">
+                        </div>
+                        <div id="map" class="map"></div>
+
+                    </form>
+                </div>
+                <div class="card-footer text-center font-weight-bold">
+                    <button id="submitNewCustomerButton" class="btn btn-outline-success">SignUp</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="pageFooter col-12 bg-light"><i class="far fa-copyright"></i> Copyrights Reserved</div>
+        </footer>
+    </body>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_24Zk9WIn9zN1shhn0W8YAolm_3vMUrM&callback=initMap&libraries=places&v=weekly" defer></script>
+    <script src="/js/api/gmap.js"></script>
+    <script src="/js/addCustomer.js"></script>
+    </html>

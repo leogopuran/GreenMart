@@ -1,0 +1,21 @@
+body {
+  background: url('/images/bg-cover.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.map {
+  height: 200px;
+  width: 100%;
+}
+
+@media all and (max-width: 900px) {
+  .offset-3 {
+      margin-left: 0% !important;
+  }
+  .col-6 {
+      max-width: 100% !important;
+  }
+}
